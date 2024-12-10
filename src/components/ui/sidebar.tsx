@@ -29,7 +29,7 @@ const items = [
   },
   {
     title: "Inbox",
-    url: "#",
+    url: "/quiz",
     icon: Inbox,
   },
   {
@@ -65,6 +65,7 @@ export function AppSidebar() {
                       <span>{item.title}</span>
                     </a>
                   </SidebarMenuButton>
+                 
                 </SidebarMenuItem>
               ))}
             </SidebarMenu>

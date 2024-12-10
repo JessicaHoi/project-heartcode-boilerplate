@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarHeader } from "@/components/ui/sidebar";
+import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarHeader ,SidebarMenuButton  } from "@/components/ui/sidebar";
 import { Toaster } from "@/components/ui/toaster";
 
 
@@ -36,6 +36,9 @@ export default function RootLayout({
     <SidebarProvider>
       <Sidebar>
         <SidebarHeader>Header Content</SidebarHeader>
+        <SidebarMenuButton asChild>
+                  <a href="/quiz">Quiz</a>
+                    </SidebarMenuButton>
         <SidebarContent>
           <SidebarGroup>Group Content</SidebarGroup>
         </SidebarContent>
