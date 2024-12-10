@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarHeader } from "@/components/ui/sidebar";
+import { Toaster } from "@/components/ui/toaster";
 
 
 
@@ -43,6 +44,7 @@ export default function RootLayout({
       <main>
         <SidebarTrigger />
         {children}
+        <Toaster />
       </main>
     </SidebarProvider>
       </body>
