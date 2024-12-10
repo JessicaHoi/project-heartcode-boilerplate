@@ -48,7 +48,7 @@ const formSchema = z.object({
   question5: z.string().min(1, { message: "Please select an option" }),
 });
 
-export function Quiz() {
+export default function Quiz() {
   const [step, setStep] = useState(0); // Track current question step
   const [isSubmitted, setIsSubmitted] = useState(false); // Track if form is submitted
   const router = useRouter(); // For navigation
