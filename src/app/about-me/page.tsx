@@ -8,12 +8,9 @@ export default function AboutMe() {
   const [randomSkill, setRandomSkill] = useState("");
 
   const skills = [
-    "JavaScript",
-    "React",
-    "Node.js",
-    "HTML & CSS",
-    "Python",
-    "Linux",
+    "I can play a clarinet",
+    "My peak elo is chess was 1.3K",
+    "i love modding minecraft"
   ];
 
   const toggleShowMore = () => setShowMore(!showMore);
@@ -28,32 +25,33 @@ export default function AboutMe() {
       <h2 className="text-3xl font-bold text-center mb-6">About Me</h2>
       <Card className="shadow-lg hover:shadow-2xl transition-shadow duration-300">
         <CardHeader>
-          <CardTitle className="text-2xl text-center">Hello, I'm Jessica</CardTitle>
+          <CardTitle className="text-2xl text-center">Hello, I'm Tian Sen</CardTitle>
           <img
-            src="https://i.pinimg.com/originals/f2/f0/e0/f2f0e067ce9b8de1cdd98c9ee9605b55.png"
+            src="pfp.png"
             className="w-48 h-auto rounded-full mx-auto mb-4 border-4 border-blue-300"
             alt="Jessica"
           />
-          <CardDescription className="text-center text-lg">I love to sleep a lot!</CardDescription>
+          <CardDescription className="text-center text-lg">I love to game a lot!</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="mb-4">
-            <p className="font-bold">Name:</p> Jessica
+            <p className="font-bold">Name:</p> Tian Sen
           </div>
           <div className="mb-4">
-            <p className="font-bold">Major:</p> Information Systems
+            <p className="font-bold">Major:</p> O levels
+          
           </div>
           <div className="mb-4 text-center">
-            <p className="font-bold">I like capybaras!</p>
+            <p className="font-bold">Im a chill guy go with the flow!</p>
             <img
-              src="https://media1.tenor.com/images/77cdd2dc4a12883d1ad7c7b77b3eb770/tenor.gif?itemid=16689914" // Replace with a different capybara GIF URL if you like
+              src="/chillguy.png"
               alt="Cute Capybara"
               className="w-auto h-auto mx-auto rounded-lg"
             />
           </div>
           {showMore && (
             <div className="mt-2">
-              <p className="font-bold">Skills:</p>
+              <p className="font-bold">Fun facts about me:</p>
               <div className="flex overflow-x-auto space-x-4 p-2">
                 {skills.map((skill, index) => (
                   <div key={index} className="bg-green-100 p-3 rounded-lg shadow-md flex-shrink-0">
@@ -64,13 +62,10 @@ export default function AboutMe() {
               <div className="mt-4">
                 <p className="font-bold">Bio:</p>
                 <p>
-                  Hi, dying in IS please send halp.
+                  Coffee addict
                 </p>
               </div>
-              <div className="mt-4">
-                <p className="font-bold">Contact:</p>
-                <p>Email: <a href="" className="text-blue-600 hover:underline">please no</a></p>
-              </div>
+             
             </div>
           )}
           <button

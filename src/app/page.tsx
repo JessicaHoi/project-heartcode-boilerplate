@@ -21,7 +21,7 @@ export default function HeroScrollDemo() {
         }
       >
         <Image
-          src={`/drug.png`} // Ensure this path is correct
+          src={`/drug1.png`} // Ensure this path is correct
           alt="hero"
           height={720}
           width={1400}
