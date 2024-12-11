@@ -35,7 +35,11 @@ export default function RootLayout({
       >
     <SidebarProvider>
       <Sidebar>
-        <SidebarHeader>Header Content <a href="/">Home</a></SidebarHeader>
+     
+        <SidebarHeader> <a href="/">Home</a></SidebarHeader>
+        <SidebarMenuButton asChild>
+                  <a href="/about-me">About me!</a>
+                    </SidebarMenuButton>
         <SidebarMenuButton asChild>
                   <a href="/quiz">Quiz</a>
                     </SidebarMenuButton>
