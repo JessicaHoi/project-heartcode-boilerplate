@@ -110,3 +110,50 @@ body {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
+.footer-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  min-width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.dropdown-menu li {
+  padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show the menu on hover */
+.footer-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+

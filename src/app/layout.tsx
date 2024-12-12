@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarHeader ,SidebarMenuButton  } from "@/components/ui/sidebar";
+import {
+  Sidebar,
+  SidebarFooter,
+  SidebarHeader,
+  SidebarMenuButton,
+} from "@/components/ui/sidebar";
 import { Toaster } from "@/components/ui/toaster";
-
-
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,49 +36,56 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-    <SidebarProvider>
-      <Sidebar>
-     
-        <SidebarHeader> <a href="/">Home</a></SidebarHeader>
-        <SidebarMenuButton asChild>
-                  <a href="/about-me">About me!</a>
-                    </SidebarMenuButton>
-        <SidebarMenuButton asChild>
-                  <a href="/quiz">Quiz</a>
-                    </SidebarMenuButton>
-        <SidebarContent>
-          <SidebarGroup>Group Content</SidebarGroup>
-        </SidebarContent>
-        <SidebarFooter>Footer Content</SidebarFooter>
-      </Sidebar>
-      <main>
-        <SidebarTrigger />
-        {children}
-        <Toaster />
-      </main>
-    </SidebarProvider>
+        <SidebarProvider>
+          <Sidebar>
+            <SidebarHeader>
+              <a href="/">Home</a>
+            </SidebarHeader>
+            <SidebarMenuButton asChild>
+              <a href="/about-me">About me!</a>
+            </SidebarMenuButton>
+            <SidebarMenuButton asChild>
+              <a href="/drugpage">Drug Abuse Informations</a>
+            </SidebarMenuButton>
+            <SidebarMenuButton asChild>
+              <a href="/quiz">Quiz- Drug Knowledge Test</a>
+            </SidebarMenuButton>
+          
+            
+            <SidebarFooter>
+              <div className="footer-dropdown">
+                <span className="dropdown-toggle">Resources ▼</span>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a href="https://www.drugabuse.gov" target="_blank">
+                      NIDA - Drug Abuse
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.who.int/health-topics/substance-use"
+                      target="_blank"
+                    >
+                      WHO - Substance Use
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.recovery.org" target="_blank">
+                      Recovery Resources
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </SidebarFooter>
+          </Sidebar>
+
+          <main>
+            <SidebarTrigger />
+            {children}
+            <Toaster />
+          </main>
+        </SidebarProvider>
       </body>
     </html>
   );
 }
-// import { ThemeProvider } from "@/components/theme-provider"
-
-// export function RootLayout({ children }: RootLayoutProps) {
-//   return (
-//     <>
-//       <html lang="en" suppressHydrationWarning>
-//         <head />
-//         <body>
-//           <ThemeProvider
-//             attribute="class"
-//             defaultTheme="system"
-//             enableSystem
-//             disableTransitionOnChange
-//           >
-//             {children}
-//           </ThemeProvider>
-//         </body>
-//       </html>
-//     </>
-//   )
-// }
