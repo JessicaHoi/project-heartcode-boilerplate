@@ -57,20 +57,20 @@ export default function RootLayout({
                 <span className="dropdown-toggle">Resources ▼</span>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="https://www.drugabuse.gov" target="_blank">
+                    <a href="https://www.addictiongroup.org/drugs/" target="_blank">
                       NIDA - Drug Abuse
                     </a>
                   </li>
                   <li>
                     <a
-                      href="https://www.who.int/health-topics/substance-use"
+                      href="https://www.webmd.com/a-to-z-guides/drug-side-effects-explained"
                       target="_blank"
                     >
                       WHO - Substance Use
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.recovery.org" target="_blank">
+                    <a href="https://www.bing.com/search?q=how+to+quit+drugs&FORM=AWRE" target="_blank">
                       Recovery Resources
                     </a>
                   </li>

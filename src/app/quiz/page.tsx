@@ -74,7 +74,7 @@ export default function Quiz() {
   async function onSubmit(data: z.infer<typeof formSchema>) {
     setIsSubmitted(true); // Mark form as submitted
     if (step < 4) {
-      setStep((prev) => prev + 1); // Move to the next question
+      setStep((`prev`) => prev + 1); // Move to the next question
       setIsSubmitted(false); // Reset form submission status
     } else {
       // On last question submission

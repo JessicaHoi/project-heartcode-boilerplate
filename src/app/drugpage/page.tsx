@@ -49,7 +49,7 @@ const DrugAwarenessPage = () => {
             <li>
               <a
                 className="text-blue-600 hover:text-blue-800 transition duration-300"
-                href="https://www.ncadd.org/"
+                href="https://www.psychologytoday.com/us/blog/almost-addicted/201312/five-must-do-things-if-family-member-is-abusing-drugs?msockid=034fd5807b9068c5169ac0d07ad569b0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
